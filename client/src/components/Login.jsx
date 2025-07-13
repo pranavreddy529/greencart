@@ -17,7 +17,7 @@ const Login = () => {
              if(data.success){
                 navigate('/')
                 setUser(data.user)
-                 setShowUserLogin(flase)
+                 setShowUserLogin(false)
 
              }else{
                 toast.error(data.message)
