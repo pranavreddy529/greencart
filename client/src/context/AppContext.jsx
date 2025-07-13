@@ -39,17 +39,22 @@ export const AppContextProvider = ({ children }) => {
 
     // Fetch User Auth Status, User Data and Cart Item
 
-    const fetchUser = async()=>{
-        try {
-            const {data} = await axios.get('api/user/is-auth');
-            if(data.success){
-                setUser(data.user)
-                setCartItems(data.user.cartItems)
-            }
-        } catch (error) {
-            setUser(null)
-        }
+   const fetchUser = async () => {
+  try {
+    const { data } = await axios.get('/api/user/is-auth', {
+      withCredentials: true, // ✅ Add this explicitly
+    });
+    if (data.success) {
+      setUser(data.user);
+      setCartItems(data.user.cartItems || {});
+    } else {
+      setUser(null);
     }
+  } catch (error) {
+    console.log("Fetch user error:", error.message);
+    setUser(null);
+  }
+};
 
 
 
