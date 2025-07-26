@@ -73,28 +73,22 @@ Edit
 
 ### 1. Clone the Repository
 
-```bash
+
 git clone https://github.com/your-username/greencart.git
 cd greencart
 2. Setup the Client (Frontend)
-bash
-Copy
-Edit
+
 cd client
 npm install
 npm run dev
 3. Setup the Server (Backend)
-bash
-Copy
-Edit
+
 cd server
 npm install
 npm run dev
 📌 Don't forget: Create a .env file in both client/ and server/ directories. Example:
 
-env
-Copy
-Edit
+
 // server/.env
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
@@ -102,9 +96,7 @@ CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_key
 CLOUDINARY_API_SECRET=your_secret
 STRIPE_SECRET=your_stripe_secret_key
-env
-Copy
-Edit
+
 // client/.env
 VITE_API_BASE_URL=http://localhost:5000
 👨‍💻 Author
