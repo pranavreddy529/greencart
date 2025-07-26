@@ -63,48 +63,4 @@ greencart/
 │ └── server.js
 └── .gitignore
 
-yaml
-Copy
-Edit
-
----
-
-🛠️ Installation & Setup
-1. Clone the Repository
-bash
-git clone https://github.com/your-username/greencart.git
-cd greencart
-2. Setup the Client (Frontend)
-bash
-cd client
-npm install
-npm run dev
-3. Setup the Server (Backend)
-Open a new terminal window/tab, then:
-
-bash
-cd server
-npm install
-npm run dev
-4. Environment Variables
-Create a .env file in both the client/ and server/ directories.
-
-
-env
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_key
-CLOUDINARY_API_SECRET=your_secret
-STRIPE_SECRET=your_stripe_secret_key
-</details> <details> <summary>Example <code>client/.env</code></summary>
-env
-VITE_API_BASE_URL=http://localhost:5000
-👨‍💻 Author
-Pranav Reddy
-Full Stack Developer from India
-
-
-📄 License
-This project is licensed under the MIT License – feel free to use and modify.
 
